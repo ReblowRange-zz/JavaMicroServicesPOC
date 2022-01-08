@@ -16,6 +16,10 @@ spring:
         uri: lb://pro-micro-prices
         predicates:
         - Path=/prices/**
+      - id: node-js-micro-export
+        uri: lb://node-js-micro-export
+        predicates:
+        - Path=/export/**
         
 #Eureka Client/Service Configuration
 eureka:
